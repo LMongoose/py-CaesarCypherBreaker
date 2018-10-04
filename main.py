@@ -12,7 +12,7 @@ def break_caesar(ctext):
 		scores.append((fitness.score(Caesar(i).decipher(ctext)),i)) 
 	return max(scores) 
 # example ciphertext
-#ctext = 'lucas' #dmusk key 8
+#'lucas' = 'dmusk' with key 8, good name for rpg characters haha
 ctext = input("Enter a crypted string: ")
 max_key = break_caesar(ctext) 
 print("best candidate with key (a,b) = "+str(max_key[1])+ ":")
